@@ -125,6 +125,7 @@ int main()
 		printf("\t1 - Resgistrar nomes\n");	
 		printf("\t2 - Consultar os nomes\n");
 		printf("\t3 - Deletar os nomes\n"); 
+		printf("\t3 - Fechar programa\n");
 		printf("Opção:"); //Fim do menu
 	
 		scanf("%d", &opcao); // Armazenameto e escolha da variavel
@@ -145,6 +146,10 @@ int main()
 			deletar(); //chamada de funções
 			break;
 			
+			case 4:
+			printf("\nVocê escolheu a opção de fechar programa. Até a proxima.\n\n");
+			return 0;
+			break;
 			
 			default:
 			printf("Essa opção não está disponivel tente novamente\n");
